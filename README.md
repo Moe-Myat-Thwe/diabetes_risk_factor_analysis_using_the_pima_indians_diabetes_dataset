@@ -1,91 +1,81 @@
-# 🩺 Pima Diabetes Analysis — Data Analysis with Python
+# 🩺 Diabetes Risk Factor Analysis (EDA)
 
-This project performs an end-to-end exploratory data analysis (EDA), and data preprocessing using the **Pima Indians Diabetes Dataset**.
-The goal is to understand what factors influence diabetes occurrence.
-
----
-
-## 📁 Project Structure
-
-
-├── pima_diabetes_analysis.ipynb   # Main analysis notebook
-
-├── diabetes.csv                   # Dataset folder
-
-├── README.md                      # Project documentation
+## Project Overview
+This project performs an Exploratory Data Analysis (EDA) on the Pima Indians Diabetes dataset
+to identify key medical and demographic factors associated with diabetes.
+The goal is to uncover meaningful insights that can support early risk assessment
+and data-driven healthcare decisions.
 
 ---
 
-## 🎯 Project Objectives
-
-* Perform **data cleaning**, **missing value handling** (This data is already clean and no missing values), and **feature engineering**.
-* Conduct **EDA** to uncover relationships between health indicators and diabetes outcomes.
-* Create clear **plots and insights** to support decision-making.
-
----
-
-## 📊 Dataset Description
-
-The dataset includes the following health-related attributes:
-
-* Pregnancies
-* Glucose
-* BloodPressure
-* SkinThickness
-* Insulin
-* BMI
-* DiabetesPedigreeFunction
-* Age
-* Outcome (Target: 1 = Diabetes, 0 = No Diabetes)
+## Objectives
+- Understand the structure and quality of the dataset
+- Identify and handle medically impossible or missing values
+- Explore relationships between health indicators and diabetes outcomes
+- Summarize actionable insights from exploratory analysis
 
 ---
 
-## 🔍 Key Steps in the Notebook
+## Dataset Description
 
-### 1. **Data Loading**
-
-* Import CSV file into Pandas
-* Inspect structure and summary statistics
-
-### 2. **Data Cleaning**
-
-* Detect Data Type
-* Detect missing or zero-values
-* Detect duplicates
-
-### 3. **Feature Engineering**
-
-* BMI_Category, AgeGroup, Pregnancy_Group
-
-
-### 4. **Exploratory Data Analysis**
-
-Includes:
-
-* Distribution plots
-* Correlation heatmap
-* Boxplots and pairplots
-* Outcome-based comparisons
-
-
-## 📦 Requirements
-
-Typical libraries:
-
-* pandas
-* numpy
-* matplotlib
-* seaborn
-* jupyter
-
-## 📁 Output
-
-The notebook generates:
-
-* Cleaned dataset 
-* Visualizations (correlation heatmap, histograms, boxplots, etc.)
-* Key insights about diabetes risk factors
+Key features include:
+- Pregnancies
+- Glucose level
+- Blood pressure
+- Skin thickness
+- Insulin
+- Body Mass Index (BMI)
+- Diabetes Pedigree Function (genetic risk)
+- Age
+- Outcome (1 = Diabetic, 0 = Non-Diabetic)
 
 ---
 
+## Tools & Technologies
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+---
+
+## Data Cleaning & Preparation
+- Identified medically impossible zero values in:
+  - Glucose
+  - Blood Pressure
+  - Skin Thickness
+  - Insulin
+  - BMI
+- Replaced invalid zero values with missing values
+- Applied median imputation to handle missing data and reduce the effect of outliers
+
+---
+
+## Exploratory Data Analysis
+Key analyses performed:
+- Distribution of diabetes outcomes
+- Glucose levels vs diabetes outcome
+- BMI and age analysis
+- Genetic risk (Diabetes Pedigree Function)
+- Correlation analysis among features
+
+---
+
+## Key Insights
+- Glucose level is the strongest indicator of diabetes risk
+- Higher BMI is associated with increased diabetes prevalence
+- Diabetes risk increases with age
+- Genetic predisposition contributes to diabetes likelihood
+- Proper handling of missing medical values significantly improves data reliability
+
+---
+
+## Conclusion
+This analysis highlights glucose, BMI, and age as critical factors associated with diabetes.
+The insights demonstrate how exploratory data analysis can support early screening
+and preventive healthcare strategies.
+
+---
 
